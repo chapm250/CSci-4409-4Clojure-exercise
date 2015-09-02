@@ -11,25 +11,36 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;; Problem #162: Logical falsity and true
+;Problem 10 - Intro to Maps
+20
 
-; What I pasted in the box:
+;Problem 16 - Hello World
+#(str "Hello, " % "!")
 
-1
+;Problem 17 - Sequences: map
+'(6 7 8)
 
-; because all the given expressions returned 1, for example:
+;Problem 18 - Sequences: filter
+'(6 7)
 
-(= 1 (if [] 1 0))
+;Problem 20 - Penultimate Element
+#(nth % (- (count %) 2))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Problem 21 - Nth Element
 
-;;; Problem #15: Double Down
 
-; What I pasted in the box:
+;Problem 23 - Reverse a Sequence
 
-#(* 2 %)
+;Problem 25 - Find the odd numbers
 
-; which is an anonymous function that doubles its argument, for example:
+;Problem 37 - Regular Expressions
 
-(= (#(* 2 %) 11) 22)
+;Problem 40 - Interpose a Seq
 
+;Problem 43 - Reverse Interleave
+
+;Problem 44 - Rotate Sequence
+
+;Problem 46 - Flipping out
+
+;Problem 47 - Contain yourself
