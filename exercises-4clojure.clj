@@ -27,20 +27,33 @@
 #(nth % (- (count %) 2))
 
 ;Problem 21 - Nth Element
-
+(fn [seq n]
+  (first (nthnext seq n)))
 
 ;Problem 23 - Reverse a Sequence
+(fn [sequence] (into () sequence))
 
 ;Problem 25 - Find the odd numbers
+(fn [n]
+   (filter odd? n))
 
 ;Problem 37 - Regular Expressions
+(apply str (re-seq #"[A-Z]+" "bA1B3Ce "))
 
 ;Problem 40 - Interpose a Seq
+(fn [a b] (drop-last(interleave b (repeat a))))
 
 ;Problem 43 - Reverse Interleave
+(fn [coll n]
+  (apply map list (partition n coll)))
 
 ;Problem 44 - Rotate Sequence
-
+(fn [n s]
+   (loop [i 0 se s]
+     (when (< i n)
+       (recur (inc i) (drop 1 (conj se (first se)) )))))
 ;Problem 46 - Flipping out
+#(fn [a b] (% b a))
 
 ;Problem 47 - Contain yourself
+4
